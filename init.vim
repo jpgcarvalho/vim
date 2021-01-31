@@ -1,3 +1,4 @@
+" ----------------------------- Plugins ------------------
 call plug#begin()
 Plug 'https://github.com/terryma/vim-smooth-scroll'
 Plug 'arcticicestudio/nord-vim'
