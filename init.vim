@@ -35,7 +35,7 @@ set inccommand=split
 set foldcolumn=2
 
 set tabstop=4 "size of tab
-set shiftwidth=2 "size of autoindent
+set shiftwidth=4 "size of autoindent
 set si "Smart indent
 set ai "Auto indent
 set nowrap "No rap lines
