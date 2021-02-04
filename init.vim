@@ -5,17 +5,22 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'mattn/emmet-vim'
-Plug 'sts10/vim-pink-moon'
 Plug 'morhetz/gruvbox'
-Plug 'tomasiser/vim-code-dark'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'chriskempson/base16-vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'tomasiser/vim-code-dark'
+
+
 
 call plug#end()
 
 
 "--------------- Theme -----------------
-colorscheme gruvbox 
+set t_Co=256
+set t_ut=
+colorscheme codedark
 set background=dark
 
 let g:lightline = {
@@ -32,10 +37,9 @@ set hidden
 set number
 set relativenumber
 set inccommand=split
-set foldcolumn=2
 
-set tabstop=4 "size of tab
-set shiftwidth=4 "size of autoindent
+set tabstop=2 "size of tab
+set shiftwidth=2 "size of autoindent
 set si "Smart indent
 set ai "Auto indent
 set nowrap "No rap lines
