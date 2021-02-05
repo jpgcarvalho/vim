@@ -18,9 +18,7 @@ call plug#end()
 
 
 "--------------- Theme -----------------
-set t_Co=256
-set t_ut=
-colorscheme codedark
+colorscheme gruvbox 
 set background=dark
 
 let g:lightline = {
@@ -38,8 +36,8 @@ set number
 set relativenumber
 set inccommand=split
 
-set tabstop=2 "size of tab
-set shiftwidth=2 "size of autoindent
+set tabstop=4 "size of tab
+set shiftwidth=4 "size of autoindent
 set si "Smart indent
 set ai "Auto indent
 set nowrap "No rap lines
@@ -61,6 +59,12 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Vs vs
 cnoreabbrev Sp sp
+
+
+
+"--------------------------Tab Navigation-------------------
+nnoremap <C-j> :tabprevious<CR>                                                                            
+nnoremap <C-k> :tabnext<CR>
 
 
 " --------------------------------------------
@@ -89,6 +93,8 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 
 "-------------------------------COC configures------------------
+
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
